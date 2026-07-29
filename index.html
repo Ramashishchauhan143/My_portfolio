@@ -65,11 +65,32 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <p id="typing"></p>
 
 <div class="hero-buttons">
+  <!-- Hire Me Button -->
+  <button type="button" class="btn primary" onclick="openContactModal()">HIRE ME</button>
 
-<a href="#contact" class="btn primary">HIRE ME</a>
+  <!-- Get CV Button -->
+  <a href="https://drive.google.com/file/d/1SCw8qxYUKLD6vKDjzunOkNFCddjETbu4/view?usp=drive_link" target="_blank" class="btn outline">GET CV</a>
+</div>
 
-<a href="https://drive.google.com/file/d/1SCw8qxYUKLD6vKDjzunOkNFCddjETbu4/view?usp=drive_link" download class="btn outline">GET CV</a>
+<!-- Modal / Popup Options -->
+<div id="contactModal" class="modal-overlay" onclick="closeContactModal(event)">
+  <div class="modal-card">
+    <span class="close-btn" onclick="toggleModal(false)">&times;</span>
+    <h3>Choose How to Connect</h3>
+    <p>Select an option to reach out directly:</p>
 
+    <div class="modal-options">
+      <!-- WhatsApp Option (Apna 10 digit number lagayein) -->
+      <a href="https://wa.me/917348153900?text=Hi%20Ramashish,%20I%20saw%20your%20portfolio!" target="_blank" class="modal-btn whatsapp">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+
+      <!-- Call Option (Apna 10 digit number lagayein) -->
+      <a href="tel:+917348153900" class="modal-btn call">
+        <i class="fas fa-phone-alt"></i> Phone Call
+      </a>
+    </div>
+  </div>
 </div>
 
 </div>

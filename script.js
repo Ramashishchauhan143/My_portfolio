@@ -186,3 +186,19 @@ s.remove();
 },4000);
 
 },5000);
+
+
+function openContactModal() {
+  document.getElementById("contactModal").style.display = "flex";
+}
+
+function toggleModal(show) {
+  document.getElementById("contactModal").style.display = show ? "flex" : "none";
+}
+
+// Background click par modal close ho jaye
+function closeContactModal(event) {
+  if (event.target.id === "contactModal") {
+    document.getElementById("contactModal").style.display = "none";
+  }
+}

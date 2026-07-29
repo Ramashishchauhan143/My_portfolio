@@ -1168,3 +1168,107 @@ opacity:0;
 }
 
 }
+
+/* Modal Overlay Styling */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+
+/* Modal Box Styling */
+.modal-card {
+  background: #ffffff;
+  color: #333333;
+  padding: 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 380px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: popup 0.3s ease-out;
+}
+
+@keyframes popup {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.modal-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.25rem;
+}
+
+.modal-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #888;
+}
+
+/* Modal Buttons Styling */
+.modal-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-btn {
+  display: block;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.modal-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.modal-btn.whatsapp {
+  background-color: #25d366;
+}
+
+.modal-btn.call {
+  background-color: #007bff;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: row; /* Force single line */
+  align-items: center;
+  gap: 15px; /* Dono buttons ke beech ka space */
+  flex-wrap: nowrap; /* Mobile par bhi line wrap na ho */
+}
+
+/* Optional: Chote mobile screens par fit rehne ke liye */
+@media (max-width: 480px) {
+  .hero-buttons {
+    gap: 10px;
+  }
+  .hero-buttons .btn {
+    padding: 10px 16px; /* Space kam karne ke liye agar screen choti ho */
+    font-size: 0.9rem;
+  }
+}
