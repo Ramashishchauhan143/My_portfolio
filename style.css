@@ -14,8 +14,8 @@ font-family:Poppins;
 ======================= */
 
 body{
-background:#E5E7EB;
-color:#222;
+background:#020617;
+color:#ffffff;
 padding-top:90px;
 transition: all 0.5s ease;
 }
@@ -182,11 +182,81 @@ padding:100px 10%;
 }
 
 .hero-left h1{
-font-size:50px;
+
+font-size:65px;
+
+font-weight:800;
+
+line-height:1.1;
+
+color:#fff;
+
+text-shadow:
+0 0 10px rgba(255,255,255,.4),
+0 0 25px rgba(108,99,255,.6),
+0 0 40px rgba(0,198,255,.4);
+
 }
 
 .hero-right img{
 width:400px;
+}
+
+
+.hero-left h2{
+
+font-size:28px;
+
+color:#38bdf8;
+
+letter-spacing:2px;
+
+text-shadow:0 0 15px #38bdf8;
+
+}
+
+
+
+
+#typing{
+
+margin-top:20px;
+
+font-size:28px;
+
+font-weight:600;
+
+color:#FFD166;
+
+text-shadow:
+0 0 10px #FFD166,
+0 0 20px orange;
+
+min-height:40px;
+
+}
+
+
+.section-title{
+
+font-size:48px;
+
+font-weight:700;
+
+margin-bottom:70px;
+
+text-align:center;
+
+color:white;
+
+text-shadow:
+
+0 0 10px #ffffff,
+
+0 0 25px #6c63ff,
+
+0 0 45px #00c6ff;
+
 }
 
 /* =======================
@@ -244,6 +314,28 @@ padding:100px 10%;
 width:350px;
 }
 
+.about-text h2{
+
+font-size:42px;
+
+color:#ffffff;
+
+margin-bottom:20px;
+
+text-shadow:0 0 15px #6c63ff;
+
+}
+
+.about-text p{
+
+font-size:19px;
+
+line-height:1.9;
+
+color:#d1d5db;
+
+}
+
 /* =======================
    EDUCATION (PREMIUM CARD)
 ======================= */
@@ -258,7 +350,13 @@ display:flex;
 align-items:center;
 gap:40px;
 
-background: rgba(255,255,255,0.7);
+background:rgba(255,255,255,.08);
+
+border:1px solid rgba(255,255,255,.12);
+
+backdrop-filter:blur(20px);
+
+color:white;
 backdrop-filter: blur(15px);
 
 padding:25px;
@@ -302,6 +400,24 @@ transition:0.4s;
 opacity:1;
 }
 
+.edu-content h3{
+
+font-size:28px;
+
+margin-bottom:15px;
+
+color:#fff;
+
+}
+
+.edu-content p{
+
+color:#d1d5db;
+
+font-size:17px;
+
+}
+
 /* =======================
    SKILLS
 ======================= */
@@ -330,12 +446,27 @@ gap:30px;
 }
 
 .skill-card{
-background:white;
-padding:20px;
-width:150px;
-border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
-text-align:center;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.1);
+
+color:white;
+
+transition:.4s;
+
+}
+
+.skill-card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:
+
+0 0 30px rgba(0,198,255,.5);
+
 }
 
 .skill-card img{
@@ -454,9 +585,14 @@ width:60px;
   overflow: hidden;
   position: relative;
 
-  background: white;
+ 
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 
+  background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.12);
   transition: 0.4s;
 }
 
@@ -466,6 +602,23 @@ width:60px;
   height: 220px;
   object-fit: cover;
   display: block;
+}
+
+.project-card h3{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:70px;
+    margin:0;
+
+    font-size:24px;
+    font-weight:700;
+
+    color:#fff;
+
+    text-shadow:
+        0 0 8px rgba(255,255,255,.6),
+        0 0 18px rgba(108,99,255,.7);
 }
 
 /* HOVER INFO */
@@ -502,8 +655,12 @@ width:60px;
 }
 
 /* TEXT */
-.project-info h3 {
-  margin-bottom: 10px;
+.project-info h3{
+
+font-size:30px;
+
+text-shadow:0 0 10px white;
+
 }
 
 .project-info p {
@@ -759,4 +916,255 @@ html{
 #contact{
   min-height:100vh;
   padding-top:140px;
+}
+
+
+/* SPACE BACKGROUND */
+
+#space-bg{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-2;
+    background:linear-gradient(
+        to bottom,
+        #020111,
+        #0a0f29,
+        #151b3b,
+        #1c2245
+    );
+}
+
+/* Galaxy Glow */
+
+body::before{
+    content:"";
+    position:fixed;
+    width:700px;
+    height:700px;
+
+    top:-250px;
+    left:-250px;
+
+    background:
+    radial-gradient(circle,
+    rgba(91,120,255,.35),
+    transparent 70%);
+
+    filter:blur(90px);
+
+    z-index:-1;
+
+    animation:galaxyMove 30s infinite alternate ease-in-out;
+}
+
+/* Purple Galaxy */
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:600px;
+    height:600px;
+
+    right:-220px;
+    bottom:-220px;
+
+    background:
+    radial-gradient(circle,
+    rgba(255,0,255,.2),
+    transparent 70%);
+
+    filter:blur(120px);
+
+    z-index:-1;
+
+    animation:galaxyMove2 25s infinite alternate ease-in-out;
+
+}
+
+@keyframes galaxyMove{
+
+0%{
+
+transform:translate(0,0);
+
+}
+
+100%{
+
+transform:translate(150px,80px);
+
+}
+
+}
+
+@keyframes galaxyMove2{
+
+0%{
+
+transform:translate(0,0);
+
+}
+
+100%{
+
+transform:translate(-150px,-80px);
+
+}
+
+}
+
+.moon{
+
+position:fixed;
+
+top:80px;
+right:120px;
+
+width:120px;
+height:120px;
+
+border-radius:50%;
+
+background:#fff;
+
+box-shadow:
+
+0 0 30px white,
+0 0 80px white,
+0 0 120px white;
+
+z-index:-1;
+
+animation:moonGlow 3s infinite alternate;
+
+}
+
+@keyframes moonGlow{
+
+from{
+
+box-shadow:
+
+0 0 20px white,
+0 0 60px white;
+
+}
+
+to{
+
+box-shadow:
+
+0 0 60px white,
+0 0 140px white;
+
+}
+
+}
+
+
+.firefly{
+
+position:fixed;
+
+width:5px;
+height:5px;
+
+border-radius:50%;
+
+background:#ffe600;
+
+box-shadow:
+
+0 0 15px yellow,
+0 0 30px yellow;
+
+animation:
+
+fly 15s linear infinite,
+blink 2s infinite;
+
+z-index:-1;
+
+}
+
+@keyframes blink{
+
+0%,100%{
+
+opacity:1;
+
+}
+
+50%{
+
+opacity:.2;
+
+}
+
+}
+
+@keyframes fly{
+
+0%{
+
+transform:translate(0,0);
+
+}
+
+50%{
+
+transform:translate(120px,-150px);
+
+}
+
+100%{
+
+transform:translate(-80px,120px);
+
+}
+
+}
+
+
+.shooting{
+
+position:fixed;
+
+width:3px;
+height:120px;
+
+background:linear-gradient(white,transparent);
+
+transform:rotate(45deg);
+
+animation:shoot 4s linear infinite;
+
+}
+
+@keyframes shoot{
+
+0%{
+
+top:-100px;
+left:80%;
+
+opacity:1;
+
+}
+
+100%{
+
+top:100%;
+left:20%;
+
+opacity:0;
+
+}
+
 }

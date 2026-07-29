@@ -100,3 +100,89 @@ document.getElementById("contact-form").addEventListener("submit", function(e){
   });
 
 });
+
+for(let i=0;i<40;i++){
+
+let fire=document.createElement("div");
+
+fire.className="firefly";
+
+fire.style.left=Math.random()*100+"vw";
+
+fire.style.top=Math.random()*100+"vh";
+
+fire.style.animationDelay=Math.random()*10+"s";
+
+document.body.appendChild(fire);
+
+}
+
+
+const canvas=document.getElementById("space-bg");
+const ctx=canvas.getContext("2d");
+
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+
+let stars=[];
+
+for(let i=0;i<300;i++){
+
+stars.push({
+
+x:Math.random()*canvas.width,
+
+y:Math.random()*canvas.height,
+
+r:Math.random()*2,
+
+o:Math.random()
+
+});
+
+}
+
+function animate(){
+
+ctx.clearRect(0,0,canvas.width,canvas.height);
+
+for(let s of stars){
+
+ctx.beginPath();
+
+ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
+
+ctx.fillStyle="rgba(255,255,255,"+s.o+")";
+
+ctx.fill();
+
+s.o+=Math.random()*0.02-0.01;
+
+if(s.o<0)s.o=0;
+
+if(s.o>1)s.o=1;
+
+}
+
+requestAnimationFrame(animate);
+
+}
+
+animate();
+
+
+setInterval(()=>{
+
+let s=document.createElement("div");
+
+s.className="shooting";
+
+document.body.appendChild(s);
+
+setTimeout(()=>{
+
+s.remove();
+
+},4000);
+
+},5000);
