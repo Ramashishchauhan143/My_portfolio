@@ -747,3 +747,16 @@ width:90%;
     font-size: 30px;
   }
 }
+html{
+  scroll-behavior: smooth;
+}
+
+html{
+  scroll-behavior:smooth;
+  scroll-padding-top:120px;
+}
+
+#contact{
+  min-height:100vh;
+  padding-top:140px;
+}
