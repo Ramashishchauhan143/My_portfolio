@@ -13,6 +13,10 @@
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+/>
 
 </head>
 
@@ -28,29 +32,79 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 <!-- NAVBAR -->
 
-<nav>
+<!-- ================= NAVBAR ================= -->
 
-<div class="logo">
-<img src="my2phpto.png" alt="Logo" class="nav-photo">
-</div>
+<nav class="navbar">
 
-<ul>
+    <div class="logo">
 
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#education">Education</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-<li>
-<button id="theme-toggle">🌙</button>
-</li>
+        <img
+            src="my2phpto.png"
+            alt="Ramashish Chauhan"
+            class="nav-photo"
+        >
+
+    </div>
 
 
-</ul>
+    <ul class="nav-menu">
+
+        <li>
+            <a href="#home" class="active">
+                <i class="fas fa-house"></i>
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="#about">
+                <i class="fas fa-user"></i>
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="#education">
+                <i class="fas fa-graduation-cap"></i>
+                Education
+            </a>
+        </li>
+
+        <li>
+            <a href="#skills">
+                <i class="fas fa-code"></i>
+                Skills
+            </a>
+        </li>
+
+        <li>
+            <a href="#projects">
+                <i class="fas fa-layer-group"></i>
+                Projects
+            </a>
+        </li>
+
+        <li>
+            <a href="#contact">
+                <i class="fas fa-envelope"></i>
+                Contact
+            </a>
+        </li>
+
+        <li>
+
+            <button
+                id="theme-toggle"
+                aria-label="Toggle theme"
+            >
+                🌙
+            </button>
+
+        </li>
+
+    </ul>
 
 </nav>
-
 
 <!-- HERO -->
 
@@ -129,128 +183,283 @@ and Cybersecurity concepts, with a passion for continuously learning modern tech
 
 
 <!-- EDUCATION -->
+<!-- ================= EDUCATION ================= -->
+
 <section id="education" class="education reveal-left">
 
-<h2 class="section-title">My Education</h2>
+  <h2 class="section-title">My Education</h2>
 
-<div class="education-wrapper">
+  <p class="education-subtitle">
+    My academic journey and the foundation that helped me build
+    my skills in software development.
+  </p>
 
-<!-- CARD 1 -->
-<div class="education-card">
+  <div class="education-wrapper">
 
-<img src="bansalcollage.jpg">
 
-<div class="edu-content">
+    <!-- ================= MCA ================= -->
 
-<h3>MCA (Master of Computer Applications)</h3>
+    <div class="education-card">
 
-<p>Bansal Institute of Science & Technology, Bhopal</p>
-<p>2024 - 2026</p>
+      <div class="education-image">
 
-<div class="edu-hover">
-<p>🎓 Grade: 8.5 CGPA</p>
-<p>💻 Focus: Full Stack Development</p>
-<p>📚 Subjects: Java , DBMS, DSA, OS,Computer newwork ,cloud computing</p>
-</div>
+        <img
+          src="bansalcollage.jpg"
+          alt="Bansal Institute of Science and Technology"
+        >
 
-</div>
+        <span class="education-year">
+          2024 - 2026
+        </span>
 
-</div>
+      </div>
 
-<!-- CARD 2 -->
-<div class="education-card">
 
-<img src="ramawad.avif">
+      <div class="edu-content">
 
-<div class="edu-content">
+        <span class="edu-degree">
+          Post Graduation
+        </span>
 
-<h3>BA (Bachelor of Arts)</h3>
+        <h3>
+          MCA
+          <span>
+            Master of Computer Applications
+          </span>
+        </h3>
 
-<p>RamAwadh Singh Mahavidyalaya, UP</p>
-<p>2021 - 2024</p>
+        <p class="edu-institute">
+          Bansal Institute of Science &amp; Technology, Bhopal
+        </p>
 
-<div class="edu-hover">
-<p>🎓 Grade: First Division</p>
-<p>🎓 Grade: 8.5 CGPA</p>
-<p>📖 Background: Strong fundamentals</p>
+        <p class="edu-description">
+          Pursuing a Master's degree focused on software development,
+          computer science fundamentals and modern application development.
+        </p>
 
-</div>
 
-</div>
+        <div class="edu-details">
 
-</div>
+          <div class="edu-detail">
+            <span>🎓</span>
+            <p>
+              <strong>CGPA</strong>
+              <br>
+              8.5
+            </p>
+          </div>
 
-</div>
+          <div class="edu-detail">
+            <span>💻</span>
+            <p>
+              <strong>Focus</strong>
+              <br>
+              Full Stack Development
+            </p>
+          </div>
 
-</section>
+          <div class="edu-detail">
+            <span>📚</span>
+            <p>
+              <strong>Subjects</strong>
+              <br>
+              Java, DBMS, DSA, OS, Networks, Cloud
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    </section>
+
+
+    <!-- ================= BA ================= -->
+
+    <!-- <div class="education-card">
+
+      <div class="education-image">
+
+        <img
+          src="ramawad.avif"
+          alt="RamAwadh Singh Mahavidyalaya"
+        >
+
+        <span class="education-year">
+          2021 - 2024
+        </span>
+
+      </div>
+
+
+      <div class="edu-content">
+
+        <span class="edu-degree">
+          Graduation
+        </span>
+
+        <h3>
+          BA
+          <span>
+            Bachelor of Arts
+          </span>
+        </h3>
+
+        <p class="edu-institute">
+          RamAwadh Singh Mahavidyalaya, Uttar Pradesh
+        </p>
+
+        <p class="edu-description">
+          Completed graduation while building strong academic fundamentals
+          and developing an interest in technology and software development.
+        </p>
+
+
+        <div class="edu-details">
+
+          <div class="edu-detail">
+
+            <span>🎓</span>
+
+            <p>
+              <strong>Result</strong>
+              <br>
+              First Division
+            </p>
+
+          </div>
+
+
+          <div class="edu-detail">
+
+            <span>📖</span>
+
+            <p>
+              <strong>Foundation</strong>
+              <br>
+              Strong Fundamentals
+            </p>
+
+          </div>
+
+
+          <div class="edu-detail">
+
+            <span>🚀</span>
+
+            <p>
+              <strong>Interest</strong>
+              <br>
+              Technology
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div> -->
+
+
 
 
 <!-- SKILLS -->
+<!-- ================= SKILLS ================= -->
 
 <section id="skills" class="skills reveal-right">
 
-<h2 class="section-title">My Skills</h2>
+    <div class="skills-heading">
 
-<div class="skills-top">
+        <div>
+            <h2 class="section-title">My Skills</h2>
+            <p class="skills-subtitle">
+                Technologies & tools I use to build modern applications
+            </p>
+        </div>
 
-<img src="hello.gif">
+        <img
+            src="hello.gif"
+            alt="Coding Animation"
+            class="skills-gif"
+        >
 
-</div>
-
-<div class="skills-container">
-
-<div class="skill-card">
-<img src="image/java.png">
-<h3>Java</h3>
-</div>
-
-<div class="skill-card">
-<img src="image/react.webp">
-<h3>React</h3>
-</div>
-
-<div class="skill-card">
-<img src="image/node.webp">
-<h3>Node JS</h3>
-</div>
-
-<div class="skill-card">
-<img src="image/sql.webp">
-<h3>MySQL</h3>
-</div>
-
-<div class="skill-card">
-<img src="image/mongoDB_socialmedia_en.jpg">
-<h3>MongoDB</h3>
-</div>
-
-<div class="skill-card">
-<img src="image/python.webp">
-<h3>Python</h3>
-</div>
+    </div>
 
 
-<div class="skill-card">
-<img src="image/html.webp">
-<h3>HTML</h3>
-</div>
+    <div class="skills-container">
 
-<div class="skill-card">
-<img src="image/css.webp">
-<h3>CSS</h3>
-</div>
+        <!-- skills cards -->
 
-<div class="skill-card">
-<img src="image/js.webp">
-<h3>Java Script</h3>
-</div>
+        <div class="skill-card">
+            <i class="devicon-java-plain colored"></i>
+            <h3>Java</h3>
+        </div>
 
-<div class="skill-card">
-<img src="image/express.webp">
-<h3>Express js</h3>
-</div>
+        <div class="skill-card">
+            <i class="devicon-javascript-plain colored"></i>
+            <h3>JavaScript</h3>
+        </div>
 
-</div>
+        <div class="skill-card">
+            <i class="devicon-react-original colored"></i>
+            <h3>React.js</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="devicon-nodejs-plain colored"></i>
+            <h3>Node.js</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="devicon-express-original"></i>
+            <h3>Express.js</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="devicon-mongodb-plain colored"></i>
+            <h3>MongoDB</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="devicon-mysql-plain colored"></i>
+            <h3>MySQL</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="devicon-html5-plain colored"></i>
+            <h3>HTML5</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="devicon-css3-plain colored"></i>
+            <h3>CSS3</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="devicon-docker-plain colored"></i>
+            <h3>Docker</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="devicon-git-plain colored"></i>
+            <h3>Git</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="devicon-github-original"></i>
+            <h3>GitHub</h3>
+        </div>
+
+        <div class="skill-card api-skill">
+            <i class="fas fa-code"></i>
+            <h3>REST API</h3>
+        </div>
+
+    </div>
 
 </section>
 
@@ -259,100 +468,255 @@ and Cybersecurity concepts, with a passion for continuously learning modern tech
 
 <section class="coding-profiles reveal-left">
 
-<h2 class="section-title">My Coding Profiles</h2>
+  <h2 class="section-title">My Coding Profiles</h2>
 
-<div class="profile-container">
+  <div class="profile-container">
 
-<a href="https://leetcode.com/u/ashish_chauhan143/" target="_blank" class="profile-card">
-<img src="image/leetcode.webp">
-<h3>LeetCode</h3>
-</a>
+    <!-- LeetCode -->
+    <a
+      href="https://leetcode.com/u/ashish_chauhan143/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="profile-card leetcode"
+    >
+      <i class="devicon-leetcode-plain"></i>
 
-<a href="https://github.com/Ramashishchauhan143" target="_blank" class="profile-card">
-<img src="image/gitgub.webp">
-<h3>GitHub</h3>
-</a>
+      <div class="profile-content">
+        <h3>LeetCode</h3>
+        <p>Problem Solving</p>
+      </div>
 
-<a href="https://www.hackerrank.com/profile/ashishchauhan141" target="_blank" class="profile-card">
-<img src="image/hakkerrank.webp">
-<h3>HackerRank</h3>
-</a>
+      <span class="profile-arrow">↗</span>
+    </a>
 
-</div>
+
+    <!-- GitHub -->
+    <a
+      href="https://github.com/Ramashishchauhan143"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="profile-card github"
+    >
+      <i class="devicon-github-original"></i>
+
+      <div class="profile-content">
+        <h3>GitHub</h3>
+        <p>Projects &amp; Code</p>
+      </div>
+
+      <span class="profile-arrow">↗</span>
+    </a>
+
+
+    <!-- HackerRank -->
+    <a
+      href="https://www.hackerrank.com/profile/ashishchauhan141"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="profile-card hackerrank"
+    >
+      <i class="devicon-hackerrank-plain"></i>
+
+      <div class="profile-content">
+        <h3>HackerRank</h3>
+        <p>Practice &amp; Skills</p>
+      </div>
+
+      <span class="profile-arrow">↗</span>
+    </a>
+
+  </div>
 
 </section>
 
 
 <!-- PROJECTS -->
+<!-- PROJECTS -->
 
-<section id="projects" class="reveal-right">
+<section id="projects" class="projects reveal-right">
 
-<h2 class="section-title">My Projects</h2>
+  <h2 class="section-title">My Projects</h2>
 
-<div class="project-container">
+  <p class="projects-subtitle">
+    Some of the projects I've built while learning, experimenting,
+    and turning ideas into real-world applications.
+  </p>
 
-<div class="project-card">
-
-<img src="medicine.jpg">
-
-<div class="project-info">
-
-<!-- <h3>MedVerify</h3> -->
-
-<p>Designed and developed MedVerify, a MERN stack application for medicine verification and AI-assisted healthcare information.
-   Integrated the OpenFDA API for reliable drug data and Groq AI to provide intelligent medicine summaries and user guidance.
-    Implemented secure API integration, responsive design, and efficient backend services.</p>
-
-<a href="https://medverfy.vercel.app/" target="_blank">Live Site</a>
-
-</div>
-<h3>MedVerify</h3>
-
-</div>
+  <div class="project-container">
 
 
-<div class="project-card">
+    <!-- ================= LISTING PLATFORM ================= -->
 
-<img src="image/whether.webp">
+    <div class="project-card">
 
-<div class="project-info">
+      <div class="project-image">
+        <img src="Listing.png" alt="Listing Platform">
+        <div class="image-overlay"></div>
 
-<!-- <h3>Weather App</h3> -->
+        <span class="project-number">01</span>
+      </div>
 
-<p>Developed a responsive Weather Application using the MERN Stack, integrating a weather API to deliver real-time weather information for any city.
-   Implemented a secure backend to protect API keys and ensure reliable data fetching while handling CORS and error management effectively. 
-   Designed an intuitive and user-friendly interface with dynamic weather updates.</p>
+      <div class="project-content">
 
-<a href="https://whether-application-pi.vercel.app" target="_blank">Live Site</a>
+        <h3>Listing Platform</h3>
 
-</div>
-<h3>Weather App</h3>
+        <p>
+          A full-stack listing platform with authentication,
+          authorization, CRUD operations, reviews and
+          ownership-based access control.
+        </p>
 
-</div>
+        <div class="tech-stack">
+          <span>Node.js</span>
+          <span>Express</span>
+          <span>MongoDB</span>
+          <span>Passport.js</span>
+        </div>
+
+        <a
+          href="https://wonder-x5x4.onrender.com/listings"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-btn"
+        >
+          View Live
+          <span>↗</span>
+        </a>
+
+      </div>
+
+    </div>
 
 
+    <!-- ================= MEDVERIFY ================= -->
 
-<div class="project-card">
+    <div class="project-card">
 
-<img src="image/amazone.webp">
+      <div class="project-image">
+        <img src="medicine.jpg" alt="MedVerify">
+        <div class="image-overlay"></div>
 
-<div class="project-info">
+        <span class="project-number">02</span>
+      </div>
 
-<!-- <h3>Amazone clone webpage</h3> -->
+      <div class="project-content">
 
-<p>Developed a responsive Amazon homepage clone using HTML, CSS, and JavaScript, replicating the original layout, navigation, product sections, 
-  
-  and interactive UI elements. Focused on responsive design, DOM manipulation, and creating a seamless user experience while strengthening
-   front-end development skills.</p>
+        <h3>MedVerify</h3>
 
-<a href="https://ramashishchauhan143.github.io/amazoneclone/" target="_blank">Live Site</a>
+        <p>
+          A MERN-based medicine verification platform with
+          AI-assisted healthcare information and reliable
+          drug data integration.
+        </p>
 
-</div>
-<h3>Amazone clone webpage</h3>
+        <div class="tech-stack">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>MongoDB</span>
+          <span>Groq AI</span>
+        </div>
 
-</div>
+        <a
+          href="https://medverfy.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-btn"
+        >
+          View Live
+          <span>↗</span>
+        </a>
 
-</div>
+      </div>
+
+    </div>
+
+
+    <!-- ================= WEATHER APP ================= -->
+
+    <div class="project-card">
+
+      <div class="project-image">
+        <img src="image/whether.webp" alt="Weather Application">
+        <div class="image-overlay"></div>
+
+        <span class="project-number">03</span>
+      </div>
+
+      <div class="project-content">
+
+        <h3>Weather Application</h3>
+
+        <p>
+          A responsive weather application providing
+          real-time weather information with secure backend
+          API integration and dynamic weather updates.
+        </p>
+
+        <div class="tech-stack">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>Express</span>
+          <span>API</span>
+        </div>
+
+        <a
+          href="https://whether-application-pi.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-btn"
+        >
+          View Live
+          <span>↗</span>
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- ================= AMAZON CLONE ================= -->
+
+    <div class="project-card">
+
+      <div class="project-image">
+        <img src="image/amazone.webp" alt="Amazon Clone">
+        <div class="image-overlay"></div>
+
+        <span class="project-number">04</span>
+      </div>
+
+      <div class="project-content">
+
+        <h3>Amazon Clone</h3>
+
+        <p>
+          A responsive Amazon homepage clone built to
+          practice frontend development, responsive layouts,
+          DOM manipulation and interactive UI elements.
+        </p>
+
+        <div class="tech-stack">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>DOM</span>
+        </div>
+
+        <a
+          href="https://ramashishchauhan143.github.io/amazoneclone/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-btn"
+        >
+          View Live
+          <span>↗</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
 
@@ -364,49 +728,223 @@ and Cybersecurity concepts, with a passion for continuously learning modern tech
 
 
 
+<!-- ================= CONTACT / HIRE SECTION ================= -->
+
+<section id="contact" class="hire reveal-left">
+
+    <div class="hire-wrapper">
+
+        <!-- LEFT SIDE -->
+
+        <div class="hire-left">
+
+            <span class="hire-badge">
+                <i class="fas fa-rocket"></i>
+                Available for opportunities
+            </span>
+
+            <h2>
+                Let's Work
+                <span>Together</span>
+            </h2>
+
+            <p class="hire-description">
+                I'm open to exciting opportunities and challenging projects.
+                If you're looking for a passionate developer to build
+                something meaningful, let's connect and create something
+                impactful together.
+            </p>
 
 
-<section id="contact" class="hire">
+            <!-- CONTACT INFO -->
 
-  <div class="hire-wrapper">
+            <div class="hire-info">
 
-    <!-- LEFT CONTENT -->
-    <div class="hire-left">
-      <h2>Let’s Work Together </h2>
-      <p>
-        I'm open for opportunities. If you have a project or role,
-        feel free to reach out. Let's build something impactful.
-      </p>
+                <a href="mailto:ramashish4574c@gmail.com">
 
-      <div class="hire-info">
-        <a href="mailto:ashishchauhan143ac@gmail.com">
-          📧 ashishchauhan143ac@gmail.com
-        </a>
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
 
-        <a href="tel:7348153900">
-          📞 +91 7348153900
-        </a>
-      </div>
+                    <div>
+                        <small>Email</small>
+                        <strong>ramashish4574c@gmail.com</strong>
+                    </div>
+
+                </a>
+
+
+                <a href="tel:+917348153900">
+
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+
+                    <div>
+                        <small>Phone</small>
+                        <strong>+91 7348153900</strong>
+                    </div>
+
+                </a>
+
+
+                <div class="contact-location">
+
+                    <div class="contact-icon">
+                        <i class="fas fa-location-dot"></i>
+                    </div>
+
+                    <div>
+                        <small>Location</small>
+                        <strong>India</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SOCIAL LINKS -->
+
+            <div class="hire-socials">
+
+                <a
+                    href="https://github.com/Ramashishchauhan143"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                >
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                >
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a
+                    href="https://leetcode.com/u/ashish_chauhan143/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LeetCode"
+                >
+                    <i class="fas fa-code"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="hire-right">
+
+            <div class="contact-card">
+
+                <div class="contact-card-header">
+
+                    <div>
+
+                        <span>GET IN TOUCH</span>
+
+                        <h3>
+                            Send me a message
+                        </h3>
+
+                    </div>
+
+                    <div class="message-icon">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+
+                </div>
+
+
+                <form id="contact-form">
+
+                    <div class="input-group">
+
+                        <label>Your Name</label>
+
+                        <div class="input-box">
+
+                            <i class="fas fa-user"></i>
+
+                            <input
+                                type="text"
+                                name="from_name"
+                                placeholder="Enter your name"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Your Email</label>
+
+                        <div class="input-box">
+
+                            <i class="fas fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                name="from_email"
+                                placeholder="Enter your email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Your Message</label>
+
+                        <div class="input-box textarea-box">
+
+                            <i class="fas fa-message"></i>
+
+                            <textarea
+                                name="message"
+                                placeholder="Tell me about your project..."
+                                rows="5"
+                                required
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="send-btn"
+                    >
+
+                        <span>Send Message</span>
+
+                        <i class="fas fa-arrow-right"></i>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
     </div>
-
-    <!-- RIGHT FORM -->
-    <div class="hire-right">
-
-      <form id="contact-form">
-
-        <input type="text" name="from_name" placeholder="Your Name" required>
-
-        <input type="email" name="from_email" placeholder="Your Email" required>
-
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-
-        <button type="submit">Send Message</button>
-
-      </form>
-
-    </div>
-
-  </div>
 
 </section>
 <footer>
